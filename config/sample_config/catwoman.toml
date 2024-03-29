@@ -1,0 +1,7 @@
+[prompt]
+width = 1024
+height = 1024
+scale = 7
+sample_steps = 28
+[[prompt.subset]]
+prompt = "一位美丽的猫女，金色的头发和蓝色的眼睛"
