@@ -20,18 +20,15 @@ sh scripts/prepare_latent_buckets/cat-woman.sh
 sh scripts/finetune_model_TaiyiXL_data_catwoman.sh
 ```
 训练100个epoch每个epoch末端我们都会测试一下case“一位美丽的猫女，金色的头发和蓝色的眼睛”.可以看到最初我们的模型还不是很理解“猫女”的概念，50个epoch之后就比较认识了，而最终模型的生成效果非常好了
-| Epoch | Generated Images |
-|-------|-----------------|
-| Epoch 1 | ![Epoch 1](./assets/catwoman_1024_20240327114903_e000001_00.png) |
-| Epoch 2 | ![Epoch 2](./assets/catwoman_1024_20240327114949_e000002_00.png) |
-| Epoch 3 | ![Epoch 3](./assets/catwoman_1024_20240327115034_e000003_00.png) |
-| Epoch 10 | ![Epoch 10](./assets/catwoman_1024_20240327115548_e000010_00.png) |
-| Epoch 20 | ![Epoch 20](./assets/catwoman_1024_20240327120317_e000020_00.png) |
-| Epoch 50 | ![Epoch 50](./assets/catwoman_1024_20240327122547_e000050_00.png) |
-| Epoch 80 | ![Epoch 80](./assets/catwoman_1024_20240327124820_e000080_00.png) |
-| Epoch 98 | ![Epoch 98](./assets/catwoman_1024_20240327130158_e000098_00.png) |
-| Epoch 99 | ![Epoch 99](./assets/catwoman_1024_20240327130244_e000099_00.png) |
-| Epoch 100 | ![Epoch 100](./assets/catwoman_1024_20240327130302_e000100_00.png) |
+
+| Epoch 1 | Epoch 2 | Epoch 3 | Epoch 10 | Epoch 20 |
+|---------|---------|---------|----------|----------|
+| ![Epoch 1](./assets/catwoman_1024_20240327114903_e000001_00.png) | ![Epoch 2](./assets/catwoman_1024_20240327114949_e000002_00.png) | ![Epoch 3](./assets/catwoman_1024_20240327115034_e000003_00.png) | ![Epoch 10](./assets/catwoman_1024_20240327115548_e000010_00.png) | ![Epoch 20](./assets/catwoman_1024_20240327120317_e000020_00.png) |
+
+| Epoch 50 | Epoch 80 | Epoch 98 | Epoch 99 | Epoch 100 |
+|----------|----------|----------|----------|-----------|
+| ![Epoch 50](./assets/catwoman_1024_20240327122547_e000050_00.png) | ![Epoch 80](./assets/catwoman_1024_20240327124820_e000080_00.png) | ![Epoch 98](./assets/catwoman_1024_20240327130158_e000098_00.png) | ![Epoch 99](./assets/catwoman_1024_20240327130244_e000099_00.png) | ![Epoch 100](./assets/catwoman_1024_20240327130302_e000100_00.png) |
+
 
 大概训练了75分钟，一般可以少跑点epochs
 ![Train Process](./assets/train.png)
