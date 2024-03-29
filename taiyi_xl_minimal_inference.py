@@ -335,34 +335,3 @@ if __name__ == "__main__":
         image = generate_image(prompt, prompt, args.negative_prompt, seed)
         image.save("temp.png")
 
-    # prompt_types = ["廊桥-zh","廊桥-en", "iphone-zh","iphone-en","色素水滴-zh","色素水滴-en","气球建筑-zh","气球建筑-en","摄影师-zh","摄影师-en"]
-
-    # MODEL_VERSION = "taiyixl-e15"
-    # seed = 1234
-    # for i,(prompt,prompt_type)  in enumerate(zip(prompt_list,prompt_types)):
-    #     image = generate_image(prompt, prompt, args.negative_prompt, seed)
-    #     save_path = os.path.join(args.output_dir, f"{MODEL_VERSION}_{prompt_type}.png")
-    #     image.save(save_path)
-
-
-
-    # if not args.interactive:
-    #     generate_image(args.prompt, args.prompt2, args.negative_prompt, seed)
-    # else:
-    #     # loop for interactive
-    #     while True:
-    #         prompt = input("prompt: ")
-    #         if prompt == "":
-    #             break
-    #         prompt2 = input("prompt2: ")
-    #         if prompt2 == "":
-    #             prompt2 = prompt
-    #         negative_prompt = input("negative prompt: ")
-    #         seed = input("seed: ")
-    #         if seed == "":
-    #             seed = None
-    #         else:
-    #             seed = int(seed)
-    #         generate_image(prompt, prompt2, negative_prompt, seed)
-
-    print("Done!")
