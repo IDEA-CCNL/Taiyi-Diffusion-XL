@@ -162,4 +162,5 @@ ckpt/
 .nfs*
 *jianh*
 *test_scripts*
-**latents**
+latents**
+*.npz
