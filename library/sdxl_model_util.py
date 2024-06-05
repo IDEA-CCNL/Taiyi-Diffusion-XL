@@ -139,6 +139,9 @@ def convert_sdxl_text_encoder_2_checkpoint(checkpoint, max_length):
 # load state_dict without allocating new tensors
 def _load_state_dict_on_device(model, state_dict, device, dtype=None):
     # dtype will use fp32 as default
+    if 'text_model.embeddings.position_ids' in state_dict.keys():
+        del state_dict["text_model.embeddings.position_ids"]
+    # del state_dict["text_model.embeddings.position_ids"]
     missing_keys = list(model.state_dict().keys() - state_dict.keys())
     unexpected_keys = list(state_dict.keys() - model.state_dict().keys())
 
